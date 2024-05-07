@@ -57,7 +57,7 @@
         // ------------------------------------------------------------------------------------------
       bindings = <
         &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
-        &trans &trans  &trans  &trans  &trans  &trans  &kp RA(N7) &kp RA(N8) &kp RA(N9) &kp RA(N0)  &trans   &trans &trans
+        &trans &trans  &trans  &trans  &trans  &trans &trans &kp RA(N7) &kp LS(N8) &kp LS(N9) &kp RA(N0)  &trans &trans
         &trans &trans  &trans  &trans  &trans  &trans  &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans &trans &trans &trans
         &trans &trans &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans &trans &trans  &trans
         &trans &trans &trans            &trans                          &trans  &trans &trans    &trans
