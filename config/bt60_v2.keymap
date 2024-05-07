@@ -55,10 +55,10 @@
         // | SHIFT |  \  |  Z  |  X  |  C  |  V  |  B  |  N  |  M  |  ,  |  .  | /   |     SHIFT     |
         // |  CTL  |  WIN  |  ALT  |            SPACE               |  ALT |  1    |  MENU   |  CTRL |
         // ------------------------------------------------------------------------------------------
-      bindings = <
+      bindings =
         &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
-        &trans &trans  &trans  &trans  &trans  &trans  &kp LBRC  &kp LPAR &kp RPAR &kp RBRC  &trans   &trans &trans
-        &trans &trans  &trans  &trans  &trans  &trans  &kp LEFT &kp DOWN  &kp UP &kp RIGHT &trans &trans &trans &trans
+        &trans &trans  &trans  &trans  &trans  &trans  &kp RA(N7) &kp RA(N8) &kp RA(N9) &kp RA(N0)  &trans   &trans &trans
+        &trans &trans  &trans  &trans  &trans  &trans  &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans &trans &trans &trans
         &trans &trans &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans &trans &trans  &trans
         &trans &trans &trans            &trans                          &trans  &trans &trans    &trans
       >;
