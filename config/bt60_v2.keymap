@@ -11,6 +11,23 @@
     zmk,matrix-transform = &iso_transform;
   };
 
+  macros {
+    blink: blink {
+    compatible = "zmk,behavior-macro";
+    #binding-cell = <0>;
+    wait-ms = <150>;
+    bindings
+      = <&bl BL_TOG>
+      , <&bl BL_TOG>
+      , <&bl BL_TOG>
+      , <&bl BL_TOG>
+      , <&bl BL_TOG>
+      , <&bl BL_TOG>
+      ;
+  }
+
+  };
+
   keymap {
     compatible = "zmk,keymap";
     default_layer {
@@ -40,7 +57,7 @@
         // ------------------------------------------------------------------------------------------
       bindings = <
         &kp GRAVE &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6 &kp F7 &kp F8 &kp F9 &kp F10 &kp F11 &kp F12 &kp DEL
-        &trans &trans &kp UP &trans &rgb_ug RGB_HUI &rgb_ug RGB_HUD &rgb_ug RGB_EFR &rgb_ug RGB_EFF &kp INS &trans &kp PSCRN &kp SLCK &kp PAUSE_BREAK
+        &blink &trans &kp UP &trans &rgb_ug RGB_HUI &rgb_ug RGB_HUD &rgb_ug RGB_EFR &rgb_ug RGB_EFF &kp INS &trans &kp PSCRN &kp SLCK &kp PAUSE_BREAK
         &trans    &kp LEFT &kp DOWN &kp RIGHT &rgb_ug RGB_BRI &rgb_ug RGB_BRD &trans &trans &trans &trans &kp HOME  &kp PG_UP &rgb_ug RGB_TOG &bootloader
         &trans &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE &bl BL_INC &bl BL_DEC &trans &trans &trans &trans &kp END &kp PG_DN  &bl BL_TOG
         &bt BT_PRV &bt BT_NXT  &trans              &trans                            &trans   &trans   &sys_reset &bt BT_CLR
