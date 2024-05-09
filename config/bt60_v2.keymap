@@ -24,8 +24,7 @@
       , <&bl BL_TOG>
       , <&bl BL_TOG>
       ;
-  }
-
+    };
   };
 
   keymap {
