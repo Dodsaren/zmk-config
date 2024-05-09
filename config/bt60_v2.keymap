@@ -14,7 +14,7 @@
   macros {
     blink: blink {
     compatible = "zmk,behavior-macro";
-    #binding-cell = <0>;
+    #binding-cells = <0>;
     wait-ms = <150>;
     bindings
       = <&bl BL_TOG>
